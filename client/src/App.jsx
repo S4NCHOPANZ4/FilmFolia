@@ -14,7 +14,6 @@ import { loadUser } from "./redux/actions/user";
 import Store from "./redux/store.js";
 
 import "./index.css";
-import "./styles/mainStyles/index.scss";
 import ProfilePage from "./pages/ProfilePage";
 
 function App() {

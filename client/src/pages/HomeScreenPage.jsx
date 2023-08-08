@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/layouts/Navbarold";
-import Row from "../components/body/Row";
-import Banner from "../components/body/Banner";
-import requests from "../axios/Requests";
 import axios from "axios";
 import { server } from "../server";
 
-import "../styles/homeScreen/index.scss";
 import styles from "../styles/styles";
 import NewPublish from "../components/layouts/publishLayout/NewPublish";
 import Trending from "../components/body/Trending";
