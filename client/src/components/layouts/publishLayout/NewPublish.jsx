@@ -8,6 +8,7 @@ import { server } from "../../../server";
 import { toast } from "react-toastify";
 import { useDispatch, useSelector } from "react-redux";
 import { AllPosts, IndexFetch } from "../../../redux/actions/allPosts";
+import Registration from "../../../pages/Registration/Registration";
 
 const NewPublish = ({
   preSelectedMovie = null,
@@ -25,6 +26,7 @@ const NewPublish = ({
   const [publishText, setPublishText] = useState("");
   const [selectedMovie, setSelectedMovie] = useState();
   const [noFilm, setNoFilm] = useState(false);
+  const [openLogin, setOpenLogin] = useState(false)
   const [fetchSkip, setFetchSkip] = useState(0);
 
   useEffect(() => {
@@ -36,7 +38,7 @@ const NewPublish = ({
   const sendComment = async () => {
 
     if(!isAuthenticated){
-      
+      setOpenLogin(true)
     }
 
     if (commentsUpdate !== null) {
@@ -93,6 +95,10 @@ const NewPublish = ({
 
   return (
     <>
+
+      {openLogin &&
+      <Registration setOpen={setOpenLogin} />
+      }
       <div className="mt-[10px] block 800px:hidden">
         {noBrowser?
         <></>
