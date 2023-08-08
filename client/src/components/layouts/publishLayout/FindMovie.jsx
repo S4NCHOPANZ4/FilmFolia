@@ -60,14 +60,15 @@ const FindMovie = ({ setOpenSearh, setSelectedMovie}) => {
 
             
             return (
-              <div key={index} className=" hover:bg-[#2a4056] p-1 cursor-pointer transition-all duration-2000 ease 800px:w-[500px] w-[85%]">
+              <div key={index} className=" hover:bg-[#2a4056] p-1 cursor-pointer transition-all duration-2000 ease 800px:w-[500px] w-[80%]">
                 {!loading ? (
                   <div 
                   onClick={() => {
                     setOpenSearh(false)
                     setSelectedMovie(movie.movie)
                   }}
-                  className="flex items-center max-w-[100%]">
+                  className="flex items-center w-[100%]"> {/* <---- */}
+                   
                     <div className="relative h-[70px] w-[60px] ">
                       <img
                         className="h-[100%] w-[100%] absolute z-30 rounded-sm transition-all duration-500 ease"
