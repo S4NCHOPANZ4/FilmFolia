@@ -1,0 +1,40 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.loader {
+    margin: auto;
+    border: 2px solid #375776;
+    border-radius: 50%;
+    border-top: 2px solid #eaf4ff;
+    width: 40px;
+    height: 40px;
+    animation: spinner 1s linear infinite;
+}
+
+.loader_mini {
+    margin: auto;
+    border: 1px solid #375776;
+    border-radius: 50%;
+    border-top: 1px solid #eaf4ff;
+    width: 20px;
+    height: 20px;
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* custom-toast.css */
+.Toastify__toast {
+    background-color: rgb(31, 47, 63); /* Replace with your desired background color */
+    color: #fff; /* Replace with your desired text color */
+  }
