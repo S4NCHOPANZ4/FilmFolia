@@ -54,7 +54,7 @@ const FindMovie = ({ setOpenSearh, setSelectedMovie}) => {
           placeholder="Film name"
           className={`${styles.input} mt-[100px] 800px:w-[500px] w-[85%] text-md p-2 border-[#ffffff3f] border-[1px] border-solid`}
         />
-        <div className="bg-[#1b2a38] 800px:w-[500px] w-[85%]">
+        <div className="bg-[#1b2a38] 800px:w-[500px] w-[90%]">
           
           {moviesSearch.map((movie, index) => {
 
