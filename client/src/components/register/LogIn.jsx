@@ -32,7 +32,7 @@ const LogIn = ({setMode}) => {
   return (
     <form className={`800px:w-[400px] w-[90vw] flex justify-center  flex-col`}>
       <label htmlFor="email" className="block text-base font-light text-white">
-        Email
+        Email - demoacctesta@gmail.com
       </label>
       <input
         name="email"
@@ -48,7 +48,7 @@ const LogIn = ({setMode}) => {
         htmlFor="password"
         className="block text-base font-light text-white"
       >
-        Password
+        Password - demo1234
       </label>
       <div className="mt-1 relative">
         <input
