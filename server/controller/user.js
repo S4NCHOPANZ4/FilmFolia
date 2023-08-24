@@ -31,7 +31,7 @@ router.post("/create-user", async (req, res, next) => {
 
     const newActivationToken = activationToken.replace(/\./g, "!");
 
-    const activationUrl = `http://localhost:5173/activation/${newActivationToken}`;
+    const activationUrl = `https://film-folia.vercel.app/activation/${newActivationToken}`;
 
     try {
       await sendMail({
